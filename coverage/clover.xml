@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1687068910086" clover="3.2.0">
+  <project timestamp="1687068910086" name="All files">
+    <metrics statements="16" coveredstatements="16" conditionals="14" coveredconditionals="14" methods="1" coveredmethods="1" elements="31" coveredelements="31" complexity="0" loc="16" ncloc="16" packages="1" files="1" classes="1"/>
+    <file name="longestIncreasingSubsequence.js" path="C:\Users\basse\OneDrive\Desktop\unit_tests\task\longestIncreasingSubsequence.js">
+      <metrics statements="16" coveredstatements="16" conditionals="14" coveredconditionals="14" methods="1" coveredmethods="1"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="20" type="cond" truecount="2" falsecount="0"/>
+      <line num="6" count="19" type="cond" truecount="2" falsecount="0"/>
+      <line num="7" count="18" type="cond" truecount="2" falsecount="0"/>
+      <line num="8" count="3" type="stmt"/>
+      <line num="13" count="15" type="stmt"/>
+      <line num="16" count="15" type="stmt"/>
+      <line num="19" count="15" type="stmt"/>
+      <line num="21" count="8038" type="stmt"/>
+      <line num="25" count="7746149" type="cond" truecount="2" falsecount="0"/>
+      <line num="26" count="1561343" type="stmt"/>
+      <line num="27" count="1561343" type="stmt"/>
+      <line num="30" count="7746149" type="cond" truecount="6" falsecount="0"/>
+      <line num="31" count="2" type="stmt"/>
+      <line num="37" count="13" type="stmt"/>
+      <line num="42" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
