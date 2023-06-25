@@ -14,6 +14,7 @@ var lengthOfLIS = function(nums) {
     }
 
     if (nums.length === 0) return 0;
+    // nums = input;
     if (nums.length > 2500) {
         output.style.color = 'crimson';
         output.innerText = `Please enter an array of length <= 2500`;
