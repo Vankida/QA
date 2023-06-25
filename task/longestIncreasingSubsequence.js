@@ -1,10 +1,27 @@
-
-
-
 var lengthOfLIS = function(nums) {
+
+    const input = document.getElementById("input").value;
+    let output = document.getElementById("output");
+
+    if (!nums) {
+        nums = input;
+        if (!nums) {
+            output.style.color = 'crimson';
+            output.innerText = `Error: Please enter comma-separated numbers. e.g: 10,9,2,5,3,7`;
+            return;
+        }
+        nums = nums.split(',').map(Number); // Convert the string to an array of integers
+    }
+
     if (nums.length === 0) return 0;
-    if (nums.length > 2500) return 'Please enter an array of length <= 2500';
+    if (nums.length > 2500) {
+        output.style.color = 'crimson';
+        output.innerText = `Please enter an array of length <= 2500`;
+        return 'Please enter an array of length <= 2500';
+    }
     if (!nums.every(Number.isInteger)) {
+        output.style.color = 'crimson';
+        output.innerText = `Error: invalid input, Please enter integers only.`;
         return "Error: invalid input";
     }
     
@@ -28,15 +45,20 @@ var lengthOfLIS = function(nums) {
             }
 
             if (nums[j] < -10000 || nums[j] > 10000 || nums[i] < -10000 || nums[i] > 10000) {
+                output.style.color = 'crimson';
+                output.innerText = `Error: invalid input`;
                 return 'Error: invalid input';
             }
         }
     }
+
+    // Display the output
+    output.style.color = 'green';
+    output.innerText = `Output: ${maxLen}`;
     
     // Return the maximum length of any increasing subsequence
     return maxLen;
 };
-// console.log(lengthOfLIS([10,9,2,5,3,7,101,18,10001]));
 
 
 module.exports = lengthOfLIS
